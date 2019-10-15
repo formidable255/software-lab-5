@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>Artist</title>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body class="container-fluid temp">
+        <div class="row justify-content-center">
+            <div id="directory" class="col-md-6" >
+                <h2 id="search-title">Artist Directory</h2>
+                <div>
+                    <input type="text" id="search"/>
+                    <button id="add_artist" class="operation-buttons" onclick="onAddPress()">Add</button>
+                    <button id="search_artist" class="operation-buttons" onclick="search()">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="artist-input">
+            <div  class="col-md-6 text-center"  >
+                <input type="text" class="artist-input text-center" id="name" placeholder="Artist Name"/>
+                <input type="text" class="artist-input text-center" id="about" placeholder="About Artist"/>
+                <input type="text"  class="artist-input text-center" id="url" placeholder="Image Url"/>
+                <button type="submit" onClick="add()">Submit</button>
+            </div>
+            
+        </div>
+                
+        </div>
+
+        <div id="artist-insert"></div>
+        
+             <!--<div class="row justify-content-center">
+                    <div id="artist" class="col-md-4 col-md-offset-4 artist">
+                        <img class="img" src="https://randomuser.me/api/portraits/med/women/3.jpg"/>
+                        <div class="desc">
+                                <h3 class="name">Jennifer Jerome</h3>
+                                <p class="name">Royal Academy of Painting and Sculpture</p>
+                        </div>
+                        
+                        
+                </div>
+            </div> -->
+                
+
+    </body>
+</html>

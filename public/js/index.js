@@ -88,7 +88,7 @@ function add(artistName, artistAbout, artistUrl, addToStorage=true){
 }
 
 function addArtists(data){
-    return fetch('http://localhost:3000/add', {
+    return fetch('https://software-lab-5.azurewebsites.net/add', {
         method: 'POST',
         body: data,
         headers: {
@@ -97,7 +97,7 @@ function addArtists(data){
     })
 }
 function getArtists(){
-    return fetch('http://localhost:3000/get')
+    return fetch('https://software-lab-5.azurewebsites.net/get')
 }
 
 function search(){
